@@ -116,7 +116,8 @@
         </div>
     </div>
 
-    <form action="contacto.html" method="post" class="contact-form">
+
+    <form id="formulario-whatsapp" class="contact-form">
         <label for="name">Nombre completo</label>
         <input type="text" id="name" name="name" required>
 
@@ -126,7 +127,7 @@
         <label for="message">Mensaje</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Enviar mensaje</button>
+        <button type="submit">Enviar por WhatsApp</button>
     </form>
 </section>
 
@@ -183,6 +184,41 @@ document.querySelectorAll('#nav a').forEach(link => {
         nav.classList.remove('active');
     });
 });
+</script>
+
+<script>
+    // Seleccionamos el formulario
+    const formWhatsApp = document.getElementById('formulario-whatsapp');
+
+    // Escuchamos el evento de "submit" (cuando se presiona el botón Enviar)
+    formWhatsApp.addEventListener('submit', function(evento) {
+        // Esto evita que la página intente recargarse o ir a otro lado
+        evento.preventDefault();
+
+        // 1. Capturamos lo que el usuario escribió
+        const nombre = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const mensaje = document.getElementById('message').value;
+
+        // 2. Tu número de teléfono (usando el que vi en tus otros botones)
+        const telefono = "50495033358";
+
+        // 3. Armamos el mensaje combinando el texto con las variables
+        // Usamos \n para hacer saltos de línea en el mensaje
+        const textoPersonalizado = `¡Hola! Me comunico desde la página web.\n\n` + 
+                                   `- Nombre: ${nombre}\n` +
+                                   `- Correo: ${email}\n` +
+                                   `- Mensaje: ${mensaje}`;
+
+        // 4. Codificamos el texto para que funcione correctamente en un enlace de internet (URL)
+        const textoCodificado = encodeURIComponent(textoPersonalizado);
+
+        // 5. Creamos el enlace oficial de WhatsApp
+        const urlWhatsApp = `https://wa.me/${telefono}?text=${textoCodificado}`;
+
+        // 6. Abrimos WhatsApp en una nueva pestaña
+        window.open(urlWhatsApp, '_blank');
+    });
 </script>
 
 </body>

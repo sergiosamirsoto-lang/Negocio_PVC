@@ -7,168 +7,183 @@
     <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <div class="brand">
-                <img src="IMG/Logo2.jpeg" alt="PVC Solutions Logo" class="logo">
-                <h1>PVC Solutions HN</h1>
-            </div>
-            <div class="header-actions">
-                <nav>
-                    <a href="#productos">Productos</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#contacto">Contacto</a>
-                </nav>
-                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">Modo oscuro</button>
-            </div>
+
+<header>
+    <div class="container header-inner">
+        
+        <div class="brand">
+            <img src="IMG/Logo2.jpeg" alt="PVC Solutions Logo" class="logo">
+            <h1>PVC Solutions HN</h1>
         </div>
-    </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h2>Soluciones de techo y pared con PVC resistente</h2>
-                    <p>Ofrecemos láminas, paneles y accesorios de PVC especialmente diseñados para techos, paredes y cubiertas.</p>
-                    <a class="button" href="#productos">Ver productos</a>
-                </div>
-                <div class="hero-card">
-                    <div class="hero-card-item">
-                        <h3>Entrega rápida</h3>
-                        <p>Logística confiable para que tus pedidos lleguen a tiempo.</p>
-                    </div>
-                    <div class="hero-card-item">
-                        <h3>Soporte técnico</h3>
-                        <p>Asesoría especializada para elegir el mejor material.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="header-actions">
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+
+            <!-- NAV -->
+            <nav id="nav">
+                <a href="#productos">Productos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <!-- BOTÓN TEMA -->
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">🌙</button>
         </div>
-    </section>
 
-    <main>
-        <section id="productos" class="container section">
-            <h2>Secciones Destacadas</h2>
-            <div class="products">
-                <article class="product-card">
-                    <span class="product-type">Tablillas PVC</span>
-                    <img src="IMG/pvc.jpeg" alt="Láminas de PVC" class="product-image">
-                    <h3>Láminas de PVC para techos</h3>
-                    <p>Resistentes al agua y fáciles de instalar para cubiertas y techos duraderos.</p>
-                    <a class="button button-secondary" href="laminas-techo.html">Ver detalles</a>
-                </article>
-                <article class="product-card">
-                    <span class="product-type">Accesorios</span>
-                    <img src="IMG/accesorios.jpeg" alt="Accesorios de PVC" class="product-image">
-                    <h3>Perfiles y fijaciones</h3>
-                    <p>Accesorios pensados para asegurar y rematar tus láminas de PVC.</p>
-                    <a class="button button-secondary" href="accesorios-osda.html">Ver detalles</a>
-                </article>
-                <article class="product-card">
-                    <span class="product-type">Paneles WPC</span>
-                    <img src="IMG/wpc.jpeg" alt="Paneles de PVC" class="product-image">
-                    <h3>Paneles de PVC para paredes</h3>
-                    <p>Soluciones decorativas y funcionales para interiores y fachadas.</p>
-                    <a class="button button-secondary" href="paneles-pared.html">Ver detalles</a>
-                </article>
-            </div>
-        </section>
+    </div>
+</header>
 
-        <section id="servicios" class="container section feature-section">
-            <h2>Nuestros Servicios</h2>
-            <div class="feature-item">
-                <h3>Calidad OSDA</h3>
-                <p>Láminas de PVC con acabado resistente y adecuado para techos y paredes.</p>
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Soluciones de techo y pared con PVC resistente</h2>
+                <p>Ofrecemos láminas, paneles y accesorios de PVC especialmente diseñados para techos, paredes y cubiertas.</p>
+                <a class="button" href="#productos">Ver productos</a>
             </div>
-            <div class="feature-item">
-                <h3>Instalación segura</h3>
-                <p>Soporte técnico para asegurar un montaje correcto y sin filtraciones.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Adaptado a tu proyecto</h3>
-                <p>Asesoría para elegir láminas y accesorios según techo, pared y presupuesto.</p>
-            </div>
-        </section>
-
-        <section id="contacto" class="container section contact-section">
-            <div class="contact-info">
-                <h2>Contáctanos</h2>
-                <p>¿Tienes dudas sobre productos, instalación o tiempos de entrega? Nuestro equipo está listo para darte una solución rápida y personalizada.</p>
-                <p>Solicita una cotización sin compromiso y recibe recomendaciones profesionales según tu proyecto residencial, comercial o industrial.</p>
-                <ul class="contact-highlights">
-                    <li><strong>Respuesta rápida:</strong> te contactamos en menos de 24 horas.</li>
-                    <li><strong>Atención especializada:</strong> asesoría en materiales, medidas y montaje.</li>
-                    <li><strong>Propuesta ajustada:</strong> ofertas pensadas para tu presupuesto.</li>
-                </ul>
-                <div class="contact-details">
-                    <p><strong>Teléfono:</strong> +504 9503-3358</p>
-                    <p><strong>Correo:</strong> PVC+Solutionshn@spdt.store</p>
-                    <p><strong>Dirección:</strong> Tienda online en San Pedro Sula, Honduras</p>
+            <div class="hero-card">
+                <div class="hero-card-item">
+                    <h3>Entrega rápida</h3>
+                    <p>Logística confiable para que tus pedidos lleguen a tiempo.</p>
+                </div>
+                <div class="hero-card-item">
+                    <h3>Soporte técnico</h3>
+                    <p>Asesoría especializada para elegir el mejor material.</p>
                 </div>
             </div>
-            <form action="contacto.html" method="post" class="contact-form">
-                <label for="name">Nombre completo</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
-
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" placeholder="Escribe tu consulta aquí" required></textarea>
-
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-inner">
-            <p>© 2026 PVC Solutions. Todos los derechos reservados.</p>
-            <p>Fabricación y distribución de soluciones en PVC para construcción.</p>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script>
-        // Tema oscuro/claro
-        const themeToggle = document.getElementById('theme-toggle');
-        const htmlElement = document.documentElement;
+<main>
 
-        // Cargar preferencia guardada o detectar preferencia del sistema
-        function loadTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-            
-            htmlElement.setAttribute('data-theme', theme);
-            updateButtonText(theme);
-        }
+<section id="productos" class="container section">
+    <h2>Secciones Destacadas</h2>
+    <div class="products">
+        <article class="product-card">
+            <span class="product-type">Tablillas PVC</span>
+            <img src="IMG/pvc.jpeg" alt="Láminas de PVC" class="product-image">
+            <h3>Láminas de PVC para techos</h3>
+            <p>Resistentes al agua y fáciles de instalar para cubiertas y techos duraderos.</p>
+            <a class="button button-secondary" href="laminas-techo.html">Ver detalles</a>
+        </article>
 
-        // Actualizar texto del botón
-        function updateButtonText(theme) {
-            themeToggle.textContent = theme === 'dark' ? '☀️ Modo claro' : '🌙 Modo oscuro';
-        }
+        <article class="product-card">
+            <span class="product-type">Accesorios</span>
+            <img src="IMG/accesorios.jpeg" alt="Accesorios de PVC" class="product-image">
+            <h3>Perfiles y fijaciones</h3>
+            <p>Accesorios pensados para asegurar y rematar tus láminas de PVC.</p>
+            <a class="button button-secondary" href="accesorios-osda.html">Ver detalles</a>
+        </article>
 
-        // Cambiar tema al hacer click
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateButtonText(newTheme);
-        });
+        <article class="product-card">
+            <span class="product-type">Paneles WPC</span>
+            <img src="IMG/wpc.jpeg" alt="Paneles de PVC" class="product-image">
+            <h3>Paneles de PVC para paredes</h3>
+            <p>Soluciones decorativas y funcionales para interiores y fachadas.</p>
+            <a class="button button-secondary" href="paneles-pared.html">Ver detalles</a>
+        </article>
+    </div>
+</section>
 
-        // Cargar tema al iniciar
-        loadTheme();
+<section id="servicios" class="container section feature-section">
+    <h2>Nuestros Servicios</h2>
+    <div class="feature-item">
+        <h3>Calidad OSDA</h3>
+        <p>Láminas de PVC con acabado resistente y adecuado para techos y paredes.</p>
+    </div>
+    <div class="feature-item">
+        <h3>Instalación segura</h3>
+        <p>Soporte técnico para asegurar un montaje correcto y sin filtraciones.</p>
+    </div>
+    <div class="feature-item">
+        <h3>Adaptado a tu proyecto</h3>
+        <p>Asesoría para elegir láminas y accesorios según techo, pared y presupuesto.</p>
+    </div>
+</section>
 
-        // Detectar cambios en preferencia del sistema
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                const newTheme = e.matches ? 'dark' : 'light';
-                htmlElement.setAttribute('data-theme', newTheme);
-                updateButtonText(newTheme);
-            }
-        });
-    </script>
+<section id="contacto" class="container section contact-section">
+    <div class="contact-info">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes dudas sobre productos, instalación o tiempos de entrega? Nuestro equipo está listo para darte una solución rápida y personalizada.</p>
+        <p>Solicita una cotización sin compromiso y recibe recomendaciones profesionales según tu proyecto.</p>
+
+        <div class="contact-details">
+            <p><strong>Teléfono:</strong> +504 9503-3358</p>
+            <p><strong>Correo:</strong> PVC+Solutionshn@spdt.store</p>
+            <p><strong>Dirección:</strong> San Pedro Sula, Honduras</p>
+        </div>
+    </div>
+
+    <form action="contacto.html" method="post" class="contact-form">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <div class="container footer-inner">
+        <p>© 2026 PVC Solutions</p>
+        <p>Soluciones en PVC para construcción</p>
+    </div>
+</footer>
+
+<script>
+// ===== TEMA OSCURO =====
+const themeToggle = document.getElementById('theme-toggle');
+const htmlElement = document.documentElement;
+
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    htmlElement.setAttribute('data-theme', theme);
+    updateButtonText(theme);
+}
+
+function updateButtonText(theme) {
+    themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    htmlElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateButtonText(newTheme);
+});
+
+loadTheme();
+
+
+// ===== MENU HAMBURGUESA =====
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('nav');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+// cerrar menú al hacer click en un link (UX PRO)
+document.querySelectorAll('#nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
+});
+</script>
+
 </body>
 </html>

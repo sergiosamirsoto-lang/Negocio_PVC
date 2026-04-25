@@ -68,7 +68,7 @@ body {
     color: var(--text-dark);
     line-height: 1.75;
     min-height: 100vh;
-    padding-top: 90px;
+    padding-top: 65px; /* FIX SLIM: Reducido de 90px a 65px para pegar el contenido al header delgado */
 }
 
 img {
@@ -121,8 +121,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0;
-    gap: 24px;
+    padding: 12px 0; /* FIX SLIM: Reducido de 24px a 12px para hacerlo más delgado */
+    gap: 15px; /* Reducido para compactar */
 }
 
 .brand {
@@ -132,21 +132,21 @@ header {
 }
 
 .brand h1 {
-    font-size: clamp(2.4rem, 2.5vw, 3.2rem);
+    font-size: clamp(1.4rem, 2vw, 1.8rem); /* FIX SLIM: Texto más pequeño para el header delgado */
     line-height: 1.05;
+    margin: 0;
 }
 
 .brand p {
-    margin-top: 10px;
-    color: rgba(255, 255, 255, 0.88);
-    font-size: 1rem;
+    display: none;
 }
 
 .logo {
-    width: 60px;
+    width: 55px;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-right: 12px;
 }
 
 .logo:hover {
@@ -350,9 +350,9 @@ nav a:focus {
 /* Sección de servicios */
 .feature-section {
     display: grid;
-    /* Cambiamos el '1fr' por '350px' para que las tarjetas no se estiren de más */
+    /* Centrado en computadora */
     grid-template-columns: repeat(auto-fit, minmax(280px, 350px)); 
-    justify-content: center; /* ¡Esto es lo que centra todo en computadora! */
+    justify-content: center; 
     gap: 24px;
 }
 
@@ -625,8 +625,8 @@ footer p:first-child {
     }
     
     .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row; /* FIX SLIM: Mantiene el logo/texto y botones en la misma línea */
+        align-items: center;
         gap: 16px;
     }
     
@@ -637,7 +637,7 @@ footer p:first-child {
     }
     
     .brand h1 {
-        font-size: 2rem;
+        font-size: 1.4rem; /* FIX SLIM: Ajustado para verse bien en tablet */
     }
     
     .section {
@@ -652,21 +652,27 @@ footer p:first-child {
 
 @media (max-width: 768px) {
     .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
     }
 
     .header-actions {
-        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
-        position: relative;
+        gap: 12px;
+    }
+
+    .interactive-buttons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
     }
 
     /* mostrar botón hamburguesa */
     .menu-toggle {
         display: block;
+        margin: 0;
     }
 
     /* FIX MÓVIL: nav por defecto en móvil con posición arreglada */
@@ -674,7 +680,7 @@ footer p:first-child {
         display: none;
         position: absolute;
         top: 100%;
-        margin-top: 15px; 
+        margin-top: 0;
         left: 0;
         right: 0;
 
@@ -746,7 +752,7 @@ footer p:first-child {
 
 @media (max-width: 520px) {
     body {
-        padding-top: 140px;
+        padding-top: 65px; /* FIX URGENTE: Reducido de 140px a 65px para quitar el hueco blanco enorme */
     }
     
     .header-inner,
@@ -756,19 +762,15 @@ footer p:first-child {
     }
     
     .header-inner {
-        padding: 16px 0;
+        padding: 12px 0; /* Mantener la barra delgada en cel */
     }
     
     .brand h1 {
-        font-size: 1.6rem;
-    }
-    
-    .brand p {
-        font-size: 0.85rem;
+        font-size: 1.2rem; /* Aún más pequeño en celulares pequeños para que no estorbe */
     }
     
     .logo {
-        width: 48px;
+        width: 40px;
     }
     
     .hero {

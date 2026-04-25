@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paneles WPC</title>
+    <title>Paneles WPC para Paredes | PVC Solutions HN</title>
 
-    <link rel="stylesheet" href="CSS/Styles3.css">
+    <link rel="icon" href="IMG/Logo2.jpeg" type="image/jpeg">
+
+    <link rel="stylesheet" href="CSS/Styles.css">
 
     <meta name="description" content="Paneles WPC en Honduras para interiores y exteriores. Modernos, resistentes y de fácil instalación.">
 </head>
@@ -17,26 +19,22 @@
     <div class="container header-inner">
 
         <div class="brand">
-            <img src="IMG/Logo2.jpeg" alt="PVC Solutions Logo" class="logo">
             <h1>PVC Solutions HN</h1>
         </div>
 
         <div class="header-actions">
 
-            <nav>
-                <!-- FIX IMPORTANTE PARA GITHUB PAGES -->
+            <nav id="nav">
                 <a href="index.html">Inicio</a>
-                <a href="#productos">Productos</a>
+                <a href="index.html#productos">Productos</a>
                 <a href="#tipos">Tipos</a>
                 <a href="#contacto">Contacto</a>
             </nav>
 
-            <button id="theme-toggle"
-                    class="theme-toggle"
-                    type="button"
-                    aria-label="Cambiar tema">
-                🌙 Modo oscuro
-            </button>
+            <div class="interactive-buttons">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">🌙</button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+            </div>
 
         </div>
 
@@ -45,22 +43,22 @@
 
 <main>
 
-    <!-- INTRO -->
     <section id="productos" class="container section">
-        <h2>Paneles WPC</h2>
+        <h2 class="section-title">Paneles WPC</h2>
 
-        <div class="product-intro">
+        <div class="hero-content">
 
-            <img src="IMG/wpc.jpeg" alt="Paneles WPC" class="product-main-image">
+            <img src="IMG/wpc.jpeg" alt="Paneles WPC" style="border-radius: 24px; box-shadow: var(--shadow-smooth); object-fit: cover; width: 100%;">
 
-            <div class="product-text">
-                <p>
+            <div class="hero-text">
+                <p style="margin-top: 0;">
                     Los paneles WPC (Wood Plastic Composite) combinan la apariencia de la madera con la durabilidad del plástico.
                     Son ideales para proyectos modernos en interiores y exteriores.
                 </p>
 
-                <h3>Características principales</h3>
-                <ul>
+                <h3 style="color: var(--primary-color); margin-bottom: 12px;">Características principales</h3>
+                
+                <ul style="color: var(--soft-text); margin-bottom: 24px; padding-left: 20px; line-height: 1.8;">
                     <li><strong>Resistentes al agua:</strong> baños, cocinas y exteriores.</li>
                     <li><strong>Fácil instalación:</strong> sistema tipo encaje.</li>
                     <li><strong>Diseño elegante:</strong> acabado tipo madera.</li>
@@ -77,15 +75,14 @@
         </div>
     </section>
 
-    <!-- TIPOS -->
     <section id="tipos" class="container section">
-        <h2>Tipos de Paneles WPC</h2>
+        <h2 class="section-title">Tipos de Paneles WPC</h2>
 
         <div class="products">
 
             <article class="product-card">
                 <span class="product-type">Interior</span>
-                <img src="IMG/wpc.jpeg" alt="Panel interior WPC">
+                <img src="IMG/wpc.jpeg" alt="Panel interior WPC" class="product-image">
                 <h3>Paneles interiores</h3>
                 <p>Para salas, dormitorios, cocinas y baños.</p>
                 <a class="button button-secondary"
@@ -97,7 +94,7 @@
 
             <article class="product-card">
                 <span class="product-type">Exterior</span>
-                <img src="IMG/wpc.jpeg" alt="Panel exterior WPC">
+                <img src="IMG/wpc.jpeg" alt="Panel exterior WPC" class="product-image">
                 <h3>Paneles exteriores</h3>
                 <p>Resistentes al sol y la lluvia.</p>
                 <a class="button button-secondary"
@@ -109,7 +106,7 @@
 
             <article class="product-card">
                 <span class="product-type">Decorativo</span>
-                <img src="IMG/wpc.jpeg" alt="Panel decorativo WPC">
+                <img src="IMG/wpc.jpeg" alt="Panel decorativo WPC" class="product-image">
                 <h3>Paneles decorativos</h3>
                 <p>Diseños modernos tipo madera.</p>
                 <a class="button button-secondary"
@@ -121,7 +118,7 @@
 
             <article class="product-card">
                 <span class="product-type">Listones</span>
-                <img src="IMG/wpc.jpeg" alt="Panel listón WPC">
+                <img src="IMG/wpc.jpeg" alt="Panel listón WPC" class="product-image">
                 <h3>Panel tipo listón</h3>
                 <p>Diseño vertical moderno.</p>
                 <a class="button button-secondary"
@@ -133,7 +130,7 @@
 
             <article class="product-card">
                 <span class="product-type">3D</span>
-                <img src="IMG/wpc.jpeg" alt="Panel 3D WPC">
+                <img src="IMG/wpc.jpeg" alt="Panel 3D WPC" class="product-image">
                 <h3>Paneles 3D</h3>
                 <p>Relieves decorativos únicos.</p>
                 <a class="button button-secondary"
@@ -145,7 +142,7 @@
 
             <article class="product-card">
                 <span class="product-type">Premium</span>
-                <img src="IMG/wpc.jpeg" alt="Panel premium WPC">
+                <img src="IMG/wpc.jpeg" alt="Panel premium WPC" class="product-image">
                 <h3>Paneles premium</h3>
                 <p>Mayor calidad y durabilidad.</p>
                 <a class="button button-secondary"
@@ -158,47 +155,66 @@
         </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="container section">
-        <h2>Contacto</h2>
-        <p>Solicita información o cotización sin compromiso.</p>
+    <section id="contacto" class="container section" style="text-align: center;">
+        <h2 class="section-title">Contacto</h2>
+        <p style="color: var(--soft-text); margin-bottom: 24px;">Solicita información o cotización sin compromiso.</p>
 
-        <div class="contact-buttons">
-            <a class="button button-secondary"
-               href="https://wa.me/50495033358"
-               target="_blank">
-                WhatsApp directo
-            </a>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a class="button" href="https://wa.me/50495033358" target="_blank">Contactar</a>
+            <a class="button button-secondary" href="https://wa.me/50495033358" target="_blank">WhatsApp directo</a>
         </div>
     </section>
 
 </main>
 
-<!-- ================= TEMA ================= -->
+<footer>
+    <div class="container footer-inner">
+        <p>© 2026 PVC Solutions HN</p>
+        <p>Soluciones en PVC para construcción</p>
+    </div>
+</footer>
+
 <script>
+// ===== TEMA OSCURO =====
 const themeToggle = document.getElementById('theme-toggle');
-const html = document.documentElement;
-
-function setTheme(theme) {
-    html.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-
-    themeToggle.textContent =
-        theme === 'dark' ? '☀️ Modo claro' : '🌙 Modo oscuro';
-}
+const htmlElement = document.documentElement;
 
 function loadTheme() {
-    const saved = localStorage.getItem('theme');
-    const system = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setTheme(saved || (system ? 'dark' : 'light'));
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+    htmlElement.setAttribute('data-theme', theme);
+    updateButtonText(theme);
+}
+
+function updateButtonText(theme) {
+    themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
 themeToggle.addEventListener('click', () => {
-    const current = html.getAttribute('data-theme');
-    setTheme(current === 'dark' ? 'light' : 'dark');
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    htmlElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateButtonText(newTheme);
 });
 
 loadTheme();
+
+// ===== MENU HAMBURGUESA =====
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('nav');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+// Cerrar menú al hacer click en enlaces
+document.querySelectorAll('#nav a').forEach(link => {
+    link.addEventListener('click', () => nav.classList.remove('active'));
+});
 </script>
 
 </body>

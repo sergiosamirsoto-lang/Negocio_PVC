@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accesorios PVC</title>
+    <title>Accesorios PVC OSDA | PVC Solutions HN</title>
 
-    <link rel="stylesheet" href="CSS/Styles3.css">
+    <link rel="icon" href="IMG/Logo2.jpeg" type="image/jpeg">
+    
+    <link rel="stylesheet" href="CSS/Styles.css">
 
     <meta name="description" content="Accesorios de PVC OSDA en Honduras. Perfiles, fijaciones y selladores para instalaciones duraderas y profesionales.">
 </head>
@@ -14,37 +16,30 @@
 
 <header>
     <div class="container header-inner">
-
         <div class="brand">
-            <img src="IMG/Logo2.jpeg" alt="PVC Solutions Logo" class="logo">
             <h1>PVC Solutions HN</h1>
         </div>
 
         <div class="header-actions">
-            <nav>
-                <!-- FIX IMPORTANTE PARA GITHUB PAGES -->
+            <nav id="nav">
                 <a href="index.html">Inicio</a>
-                <a href="#productos">Productos</a>
-                <a href="#servicios">Servicios</a>
+                <a href="index.html#productos">Productos</a>
+                <a href="index.html#servicios">Servicios</a>
                 <a href="#contacto">Contacto</a>
             </nav>
 
-            <button id="theme-toggle"
-                    class="theme-toggle"
-                    type="button"
-                    aria-label="Cambiar tema">
-                🌙 Modo oscuro
-            </button>
+            <div class="interactive-buttons">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">🌙</button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+            </div>
         </div>
-
     </div>
 </header>
 
 <main>
 
-    <!-- SERVICIOS -->
     <section id="servicios" class="container section feature-section">
-        <h2>Nuestros Servicios</h2>
+        <h2 class="section-title">Nuestros Servicios</h2>
 
         <div class="feature-item">
             <h3>Calidad OSDA</h3>
@@ -62,21 +57,20 @@
         </div>
     </section>
 
-    <!-- PRODUCTO -->
     <section id="productos" class="container section">
-        <h2>Accesorios PVC OSDA</h2>
+        <h2 class="section-title">Accesorios PVC OSDA</h2>
 
-        <div class="product-intro">
-            <img src="IMG/accesorios.jpeg" alt="Accesorios de PVC" class="product-main-image">
+        <div class="hero-content">
+            <img src="IMG/accesorios.jpeg" alt="Accesorios de PVC" style="border-radius: 24px; box-shadow: var(--shadow-smooth); object-fit: cover; width: 100%;">
 
-            <div class="product-text">
-                <p>
+            <div class="hero-text">
+                <p style="margin-top: 0;">
                     Nuestros accesorios de PVC OSDA complementan perfectamente tus instalaciones de techos y paredes.
                     Ofrecen resistencia, durabilidad y un acabado profesional.
                 </p>
 
-                <h3>Características principales</h3>
-                <ul>
+                <h3 style="color: var(--primary-color); margin-bottom: 12px;">Características principales</h3>
+                <ul style="color: var(--soft-text); margin-bottom: 24px; padding-left: 20px; line-height: 1.8;">
                     <li><strong>Perfiles de remate:</strong> mejoran estética y protegen bordes.</li>
                     <li><strong>Fijaciones resistentes:</strong> aseguran instalación firme.</li>
                     <li><strong>Sellado eficiente:</strong> previene filtraciones y humedad.</li>
@@ -91,15 +85,13 @@
         </div>
     </section>
 
-    <!-- VARIANTES -->
     <section class="container section">
-        <h2>Tipos de Accesorios</h2>
+        <h2 class="section-title">Tipos de Accesorios</h2>
 
         <div class="products">
-
             <article class="product-card">
                 <span class="product-type">Perfiles</span>
-                <img src="IMG/accesorios.jpeg" alt="Perfiles de PVC">
+                <img src="IMG/accesorios.jpeg" alt="Perfiles de PVC" class="product-image">
                 <h3>Perfiles de Remate</h3>
                 <p>Acabados para bordes y esquinas con mayor protección.</p>
                 <a class="button button-secondary"
@@ -111,7 +103,7 @@
 
             <article class="product-card">
                 <span class="product-type">Fijaciones</span>
-                <img src="IMG/accesorios.jpeg" alt="Fijaciones de PVC">
+                <img src="IMG/accesorios.jpeg" alt="Fijaciones de PVC" class="product-image">
                 <h3>Tornillos y Anclajes</h3>
                 <p>Elementos resistentes para asegurar cada instalación.</p>
                 <a class="button button-secondary"
@@ -123,7 +115,7 @@
 
             <article class="product-card">
                 <span class="product-type">Sellado</span>
-                <img src="IMG/accesorios.jpeg" alt="Selladores PVC">
+                <img src="IMG/accesorios.jpeg" alt="Selladores PVC" class="product-image">
                 <h3>Selladores</h3>
                 <p>Soluciones para evitar filtraciones y humedad.</p>
                 <a class="button button-secondary"
@@ -132,57 +124,67 @@
                     Ver detalles
                 </a>
             </article>
-
         </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="container section">
-        <h2>Contacto</h2>
-        <p>Contáctanos para cotizar o recibir asesoría personalizada.</p>
+    <section id="contacto" class="container section" style="text-align: center;">
+        <h2 class="section-title">Contacto</h2>
+        <p style="color: var(--soft-text); margin-bottom: 24px;">Contáctanos para cotizar o recibir asesoría personalizada.</p>
 
-        <div class="contact-buttons">
-            <a class="button"
-               href="https://wa.me/50495033358"
-               target="_blank">
-                Contactar
-            </a>
-
-            <a class="button button-secondary"
-               href="https://wa.me/50495033358"
-               target="_blank">
-                WhatsApp
-            </a>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a class="button" href="https://wa.me/50495033358" target="_blank">Contactar</a>
+            <a class="button button-secondary" href="https://wa.me/50495033358" target="_blank">WhatsApp</a>
         </div>
     </section>
 
 </main>
 
-<!-- ================= JS TEMA ================= -->
+<footer>
+    <div class="container footer-inner">
+        <p>© 2026 PVC Solutions HN</p>
+        <p>Soluciones en PVC para construcción</p>
+    </div>
+</footer>
+
 <script>
-const themeToggle = document.getElementById('theme-toggle');
-const html = document.documentElement;
+    // 1. Lógica de Tema Oscuro
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
 
-function setTheme(theme) {
-    html.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
+    function loadTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        htmlElement.setAttribute('data-theme', theme);
+        updateButtonText(theme);
+    }
 
-    themeToggle.textContent =
-        theme === 'dark' ? '☀️ Modo claro' : '🌙 Modo oscuro';
-}
+    function updateButtonText(theme) {
+        themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
 
-function loadTheme() {
-    const saved = localStorage.getItem('theme');
-    const system = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setTheme(saved || (system ? 'dark' : 'light'));
-}
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateButtonText(newTheme);
+    });
 
-themeToggle.addEventListener('click', () => {
-    const current = html.getAttribute('data-theme');
-    setTheme(current === 'dark' ? 'light' : 'dark');
-});
+    loadTheme();
 
-loadTheme();
+    // 2. Lógica Menú Hamburguesa (¡Faltaba en tu código viejo!)
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+
+    // Cerrar menú al hacer click en enlaces
+    document.querySelectorAll('#nav a').forEach(link => {
+        link.addEventListener('click', () => nav.classList.remove('active'));
+    });
 </script>
 
 </body>

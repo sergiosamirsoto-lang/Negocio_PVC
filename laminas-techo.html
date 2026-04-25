@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Láminas de PVC para Techos</title>
-    <link rel="stylesheet" href="CSS/Styles2.css">
+    <title>Láminas de PVC para Techos | PVC Solutions HN</title>
+    
+    <link rel="icon" href="IMG/Logo2.jpeg" type="image/jpeg">
+
+    <link rel="stylesheet" href="CSS/Styles.css">
+
+    <meta name="description" content="Láminas de PVC para techos en Honduras. Resistentes al agua, fáciles de instalar y con variedad de acabados para proyectos residenciales y comerciales.">
 </head>
 <body>
 
@@ -12,21 +17,22 @@
     <div class="container header-inner">
 
         <div class="brand">
-            <img src="IMG/Logo2.jpeg" alt="PVC Solutions Logo" class="logo">
             <h1>PVC Solutions HN</h1>
         </div>
 
         <div class="header-actions">
             
-            <nav>
-                <a href="/">Inicio</a>
-                <a href="/#productos">Productos</a>
-                <a href="/#servicios">Servicios</a>
-                <a href="/#contacto">Contacto</a>
+            <nav id="nav">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#productos">Productos</a>
+                <a href="index.html#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
             </nav>
 
-            <!-- botón modo oscuro corregido -->
-            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">🌙</button>
+            <div class="interactive-buttons">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">🌙</button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+            </div>
 
         </div>
 
@@ -36,7 +42,7 @@
 <main>
 
     <section id="servicios" class="container section feature-section">
-        <h2>Nuestros Servicios</h2>
+        <h2 class="section-title">Nuestros Servicios</h2>
 
         <div class="feature-item">
             <h3>Calidad OSDA</h3>
@@ -55,28 +61,32 @@
     </section>
 
     <section id="productos" class="container section">
-        <h2>Láminas de PVC para Techos</h2>
+        <h2 class="section-title">Láminas de PVC para Techos</h2>
 
-        <div class="product-intro">
+        <div class="hero-content">
 
-            <img src="IMG/pvc.jpeg" alt="Láminas de PVC para techos" class="product-main-image">
+            <img src="IMG/pvc.jpeg" alt="Láminas de PVC para techos" style="border-radius: 24px; box-shadow: var(--shadow-smooth); object-fit: cover; width: 100%;">
 
-            <div class="product-text">
+            <div class="hero-text">
 
-                <p>
+                <p style="margin-top: 0;">
                     Nuestras láminas de PVC para techos son la solución ideal para proyectos residenciales y comerciales.
                     Diseñadas para resistir la humedad, el calor y las condiciones climáticas adversas.
                 </p>
 
-                <h3>Características principales</h3>
+                <h3 style="color: var(--primary-color); margin-bottom: 12px;">Características principales</h3>
 
-                <ul>
+                <ul style="color: var(--soft-text); margin-bottom: 24px; padding-left: 20px; line-height: 1.8;">
                     <li><strong>Resistencia al agua:</strong> Perfectas para humedad.</li>
                     <li><strong>Fácil instalación:</strong> Adaptables a estructuras.</li>
                     <li><strong>Variedad de acabados:</strong> Diferentes estilos.</li>
                 </ul>
 
-                <a class="button" href="/#contacto">Solicitar cotización</a>
+                <a class="button" 
+                   href="https://wa.me/50495033358?text=Hola,%20quiero%20cotizar%20láminas%20de%20PVC%20para%20techos" 
+                   target="_blank">
+                    Solicitar cotización
+                </a>
 
             </div>
 
@@ -84,49 +94,62 @@
     </section>
 
     <section class="container section">
-        <h2>Variantes de Láminas</h2>
+        <h2 class="section-title">Variantes de Láminas</h2>
 
         <div class="products">
 
             <article class="product-card">
                 <span class="product-type">Estándar</span>
-                <img src="IMG/pvc.jpeg" alt="Láminas estándar">
+                <img src="IMG/pvc.jpeg" alt="Láminas estándar" class="product-image">
                 <h3>Láminas PVC Estándar</h3>
                 <p>Láminas básicas resistentes para techos convencionales.</p>
-                <a class="button button-secondary" href="/#contacto">Ver detalles</a>
+                <a class="button button-secondary" 
+                   href="https://wa.me/50495033358?text=Información%20sobre%20láminas%20PVC%20Estándar" 
+                   target="_blank">Ver detalles</a>
             </article>
 
             <article class="product-card">
                 <span class="product-type">Premium</span>
-                <img src="IMG/pvc.jpeg" alt="Láminas premium">
+                <img src="IMG/pvc.jpeg" alt="Láminas premium" class="product-image">
                 <h3>Láminas PVC Premium</h3>
                 <p>Mayor durabilidad y mejor acabado estético.</p>
-                <a class="button button-secondary" href="/#contacto">Ver detalles</a>
+                <a class="button button-secondary" 
+                   href="https://wa.me/50495033358?text=Información%20sobre%20láminas%20PVC%20Premium" 
+                   target="_blank">Ver detalles</a>
             </article>
 
             <article class="product-card">
                 <span class="product-type">Translúcidas</span>
-                <img src="IMG/pvc.jpeg" alt="Láminas translúcidas">
+                <img src="IMG/pvc.jpeg" alt="Láminas translúcidas" class="product-image">
                 <h3>Láminas PVC Translúcidas</h3>
                 <p>Dejan pasar luz natural sin dejar entrar agua.</p>
-                <a class="button button-secondary" href="/#contacto">Ver detalles</a>
+                <a class="button button-secondary" 
+                   href="https://wa.me/50495033358?text=Información%20sobre%20láminas%20PVC%20Translúcidas" 
+                   target="_blank">Ver detalles</a>
             </article>
 
         </div>
     </section>
 
-    <section id="contacto" class="container section">
-        <h2>Contacto</h2>
+    <section id="contacto" class="container section" style="text-align: center;">
+        <h2 class="section-title">Contacto</h2>
 
-        <p>¿Interesado en nuestras láminas de PVC? Contáctanos.</p>
+        <p style="color: var(--soft-text); margin-bottom: 24px;">¿Interesado en nuestras láminas de PVC? Contáctanos.</p>
 
-        <div class="contact-buttons">
-            <a class="button" href="/#contacto">Contáctanos</a>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a class="button" href="https://wa.me/50495033358" target="_blank">Contactar</a>
             <a class="button button-secondary" href="https://wa.me/50495033358" target="_blank">WhatsApp</a>
         </div>
     </section>
 
 </main>
+
+<footer>
+    <div class="container footer-inner">
+        <p>© 2026 PVC Solutions HN</p>
+        <p>Soluciones en PVC para construcción</p>
+    </div>
+</footer>
 
 <script>
 // ===== TEMA OSCURO =====
@@ -156,6 +179,19 @@ themeToggle.addEventListener('click', () => {
 });
 
 loadTheme();
+
+// ===== MENU HAMBURGUESA =====
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('nav');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+
+// Cerrar menú al hacer click en enlaces
+document.querySelectorAll('#nav a').forEach(link => {
+    link.addEventListener('click', () => nav.classList.remove('active'));
+});
 </script>
 
 </body>

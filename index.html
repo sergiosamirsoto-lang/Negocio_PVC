@@ -181,13 +181,11 @@
         evento.preventDefault();
 
         const nombre = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
         const mensaje = document.getElementById('message').value;
         const telefono = "50494078458";
 
         const textoPersonalizado = `¡Hola! Me comunico desde la página web.\n\n` + 
                                    `- Nombre: ${nombre}\n` +
-                                   `- Correo: ${email}\n` +
                                    `- Mensaje: ${mensaje}`;
 
         const urlWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(textoPersonalizado)}`;

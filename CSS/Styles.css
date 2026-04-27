@@ -1114,3 +1114,194 @@ footer {
 
     .product-card--featured::before { display: none; }
 }
+
+/* ============================================
+   PÁGINAS INTERIORES
+   ============================================ */
+
+/* Hero de página interior (sin imagen de fondo) */
+.page-hero {
+    padding: 80px 0 60px;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #1a2530 100%);
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.page-hero .hero-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--clr-accent);
+    background: rgba(196, 147, 90, 0.15);
+    border: 1px solid rgba(196, 147, 90, 0.3);
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    margin-bottom: 18px;
+}
+
+.page-hero h2 {
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    max-width: 700px;
+    margin: 0 auto 16px;
+    letter-spacing: -0.01em;
+}
+
+.page-hero p {
+    color: rgba(255,255,255,0.72);
+    font-size: 1.05rem;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+
+/* Detalle de producto (imagen + info lado a lado) */
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.product-detail-image img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+    max-height: 420px;
+}
+
+.product-detail-info p {
+    color: var(--txt-secondary);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.product-detail-info h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--txt-primary);
+    margin-bottom: 14px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--txt-secondary);
+    line-height: 1.6;
+    padding: 10px 14px;
+    background: var(--bg-surface-soft);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--clr-accent);
+    font-size: 0.95rem;
+}
+
+.feature-list li strong {
+    color: var(--txt-primary);
+}
+
+/* Sección CTA de contacto al final de páginas interiores */
+.contact-cta-section {
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #1a2530 100%);
+    padding: 72px 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.contact-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-cta-inner h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.contact-cta-inner p {
+    color: rgba(255,255,255,0.65);
+    font-size: 1rem;
+}
+
+.contact-cta-buttons {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.button-ghost-dark {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.85);
+    padding: 13px 28px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background var(--transition), color var(--transition);
+    display: inline-flex;
+    align-items: center;
+}
+
+.button-ghost-dark:hover {
+    background: rgba(255,255,255,0.14);
+    color: #ffffff;
+}
+
+/* Responsive páginas interiores */
+@media (max-width: 768px) {
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .contact-cta-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-cta-buttons {
+        justify-content: center;
+    }
+
+    .page-hero {
+        padding: 60px 0 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero h2 { font-size: 1.55rem; }
+
+    .contact-cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-cta-buttons .button,
+    .button-ghost-dark {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
